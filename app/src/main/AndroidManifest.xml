@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.nepalicoders.broadcastreceiverdemo">
+
+    <!--<permission-->
+    <!--android:name="my.permission"-->
+    <!--android:protectionLevel="signature"/>-->
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- <activity android:name=".MainActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+
+        <!-- <receiver android:name=".MyFirstReceiver"> -->
+        <!-- <intent-filter android:priority="10"> -->
+        <!-- <action android:name="my.custom.action.name"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- <receiver android:name=".MySecondReceiver"> -->
+        <!-- <intent-filter android:priority="20"> -->
+        <!-- &lt;!&ndash;<action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>&ndash;&gt; -->
+        <!-- <action android:name="my.custom.action.name"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- <receiver android:name=".MainActivity$MyThirdReceiverInner"> -->
+        <!-- <intent-filter android:priority="30"> -->
+        <!-- &lt;!&ndash;<action android:name="my.custom.anotheraction.name"/>&ndash;&gt; -->
+        <!-- <action android:name="my.custom.action.name"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+
+        <!-- <receiver android:name=".MyFourthReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="my.custom.action.name"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <activity android:name=".StickyBroadcastActivityDeprecatedApi21"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <activity android:name=".AppSecurityWithBroadcastReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!--<activity android:name=".LocalBroadcastReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN"/>-->
+
+        <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!--<receiver android:name=".MyReceiver"/>-->
+
+        <activity android:name=".BroadcastReceiversWithAndroidPermissions">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".IncomingReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
